@@ -14,8 +14,8 @@ name: Redmi-AX6000-build-hanwckf
 on:
   repository_dispatch:
   workflow_dispatch:
-  schedule:
-    - cron: 0 16 * * *
+  #schedule:
+    #- cron: 0 16 * * *
 
 env:
   REPO_URL: https://github.com/hanwckf/immortalwrt-mt798x
@@ -24,9 +24,9 @@ env:
   CONFIG_FILE: hanwckf/Redmi-AX6000/.config
   DIY_P1_SH: hanwckf/Redmi-AX6000/diy-part1.sh
   DIY_P2_SH: hanwckf/Redmi-AX6000/diy-part2.sh
-  UPLOAD_FIRMWARE: true
+  #UPLOAD_FIRMWARE: true
   UPLOAD_RELEASE: true
-  UPLOAD_PACKAGES: true
+  #UPLOAD_PACKAGES: true
   TZ: Europe/Paris
 
 jobs:
